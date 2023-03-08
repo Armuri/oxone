@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Oxone - Inscription</title>
+</head>
+<body>
+    <link rel="stylesheet" href="./css/inscription.css">
+    <header>
+        <h1>Bienvenue sur la page du formulaire d'inscription</h1>
+    </header>
+        <main>
+            <form action="./php/inscription.php" method="post" id="formulaire">
+                <label for="pseudo"> Pseudo :</label>
+                <br>
+                    <input type="text" name="pseudo" id="pseudo" required>
+                    <br><br>
+                <label for="email"> E-mail :</label>
+                <br>
+                    <input type="email" name="email" id="email" required>
+                    <br><br>
+                <label for="password"> Mot de passe :</label>
+                <br>
+                    <input type="password" name="password" id="password" required>
+                    <br><br>
+                <label for="password"> Confirmer votre mot de passe :</label>
+                <br>
+                    <input type="password" name="conf_password" id="conf_password" required>
+                    <br><br>
+                    <input type="submit" name="S'inscrire" id="submit">
+                    <input type="reset" name="Effacer les valeurs" id="reset">
+                    <p>Vous avez déjà un compte ? <a href="connexion.html">Connectez-vous</a>.</p>
+            </form>
+        </main>
+</body>
+</html>
